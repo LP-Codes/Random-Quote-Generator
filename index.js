@@ -1,4 +1,4 @@
-url = "http://quotes.stormconsultancy.co.uk/random.json";
+url = "https://api.whatdoestrumpthink.com/api/v1/quotes/random";
 
 
 function hndlbtnclick() {
@@ -15,11 +15,11 @@ function hndlbtnclick() {
   axios
     .get(url)
     .then(function (res) {
-      // console.log(res);
+      console.log(res);
       var author = document.getElementById("h4");
       var quotes = document.getElementById("p");
       author.innerHTML = "Author - " + res.data.author;
-      quotes.innerHTML = res.data.quote;
+      quotes.innerHTML = res.data.message;
     })
     .catch((err) => console.log(err));
 }
