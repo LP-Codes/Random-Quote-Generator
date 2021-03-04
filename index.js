@@ -1,7 +1,7 @@
-
 url = "http://quotes.stormconsultancy.co.uk/random.json";
 
 function hndlbtnclick() {
+  console.log("btnclkd");
   // fetch(url)
   //   .then((res) => res.json())
   //   .then(function (data) {
