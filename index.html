@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <title>Random Quotes</title>
+  </head>
+  <body style="background-image: url(11.png) ; background-size: cover;">
+    <div class="container text-center">
+      <h2 class="text-dark bg-info text-light">Random  <em>"Quotes"</em> Genrator</h2>
+      <br />
+      <div class="row">
+        <div class="card" style="width: 1000px ">
+          <img id="img"
+            class="card-img-top"
+            src="https://picsum.photos/1080/1000/?random"
+            style="height: 400px; width: 1000px"
+            alt="Card image"
+          />
+          <div class="card-body bg-warning text-dark">
+            <h4 class="card-title" id="h4"></h4>
+            <p class="card-text text-center" id="p"></p>
+            <button id="btn" class="btn-primary "><b>Click To Generate a Quote</b></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+
+  </body>
+  <script src="index.js"></script>
+
+</html>
