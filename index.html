@@ -3,46 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 ,user-scalable=no"
+    />
+    <style>
+      body {
+        background-image: url("11.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        overflow: hidden;
+      }
+    </style>
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-
     <title>Random Quotes</title>
   </head>
-  <body style="background-image: url(11.png) ;height: 100%;  background-repeat: no-repeat;
-  background-size: cover; background-position: center">
-    <h2 class=" bg-info text-light text-center">
-      Random <em>"Quotes"</em> Genrator
+  <body>
+    <h2
+      style="
+        background-color: grey;
+        text-align: center;
+        font-weight: bolder;
+        color: honeydew;
+        border-style: solid;
+      "
+    >
+      Random <em style="color: rgb(245, 196, 224)">"Quotes"</em> Generator
+      <i style="color: rgb(245, 231, 35)" class="fab fa-accusoft"></i>
     </h2>
-    <div class="container ">
-      <br />
-      <div class="row">
-        <div class="card" style="width: 1000px">
-          <img
-            id="img"
-            class="card-img-top"
-            src="https://picsum.photos/1080/1000/?random"
-            style="height: 400px; width: 1000px"
-            alt="Card image"
-          />
-          <div class="card-body bg-warning text-dark text-center">
-            <h4 class="card-title" id="h4"></h4>
-            <p class="card-text text-center" id="p"></p>
-            <button id="btn" class="btn-primary">
-              <b>Click To Generate a Quote</b>
-            </button>
-          </div>
-        </div>
-      </div>
+    <div style="text-align: center;">
+      <img
+        style="border-style: solid;height:100%;width:100%;"
+        id="img"
+        src="https://picsum.photos/1280/300/?mountains"
+      
+      />
+      <div style="background-color: thistle;border: solid;border-radius: 40px;"><h4 style="font-size: x-large;" id="h4"></h4>
+        <p style="font-size: large ;color:rgb(17, 40, 139);" class="card-text text-center" id="p"></p>
+        <button style="padding-bottom: 2px;margin-bottom: 20px;font-weight: bolder;color:whitesmoke;background-color: #008CBA;font-size: 16px;border: 4px solid;border-radius: 40px;" id="btn">
+          <b>Click To Generate a Quote</b>
+        </button></div>
+      
     </div>
   </body>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
