@@ -14,16 +14,10 @@ function hndlbtnclick() {
       author.innerHTML = "Author - " + data[x].author;
       quotes.innerHTML = data[x].text;
     });
-  // axios
-  //   .get(url)
-  //   .then(function (res) {
-  //     console.log(res);
-  //     var author = document.getElementById("h4");
-  //     var quotes = document.getElementById("p");
-  //     author.innerHTML = "Author - " + res.data.author;
-  //     quotes.innerHTML = res.data.message;
-  //   })
-  //   .catch((err) => console.log(err));
+
 }
 
-document.getElementById("btn").addEventListener("click", hndlbtnclick);
+
+document.getElementById("btn").addEventListener("mouseenter",function (param) {this.style.background="black"  });
+document.getElementById("btn").addEventListener("mouseleave",function (param) {this.style.background="#56808f"  });
+document.getElementById("btn").addEventListener("click",hndlbtnclick);
