@@ -8,10 +8,12 @@
       content="width=device-width, initial-scale=1.0 ,user-scalable=no"
     />
     <style>
+      html,
+      body {
+        height: 100%;
+      }
       body {
         overflow: hidden;
-        height: auto;
-        width: 100%;
       }
     </style>
     <link
@@ -20,7 +22,7 @@
     />
     <title>Random Quotes</title>
   </head>
-  <body>
+  <body style="border: solid">
     <h2
       style="
         background-color: grey;
@@ -34,8 +36,11 @@
       <i style="color: rgb(245, 231, 35)" class="fab fa-accusoft"></i>
     </h2>
     <div style="text-align: center">
-      <img id="img" src="https://picsum.photos/1280/300/?mountains"  style="width: 100%;
-      height: auto;"/>
+      <img
+        id="img"
+        src="https://picsum.photos/1280/300/?mountains"
+        style="width: 100%; height: auto"
+      />
       <div
         style="background-color: thistle; border: solid; border-radius: 40px"
       >
