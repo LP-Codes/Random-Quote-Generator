@@ -8,18 +8,21 @@
       content="width=device-width, initial-scale=1.0 ,user-scalable=no"
     />
     <style>
-html{
-  height: 100%;
-}
- body{
+      html{
+        padding:0px;
+        height:100%
+      }
+   
+      body {
+        background-color: palegreen;
 
-  background-color:palegreen;
-  min-height: 100%;
-  overflow: hidden;
- 
- }
- *{ border: 1px solid red; }
+        overflow: hidden;
+        height:100%;
        
+      }
+      * {
+        border: 1px solid red;
+      }
     </style>
     <link
       rel="stylesheet"
@@ -28,29 +31,34 @@ html{
     <title>Random Quotes</title>
   </head>
   <body>
-    
-    <div style="text-align: center;border: solid blue ; margin-bottom:20px;" class="md">
-      <h2
-      style="
-        background-color: grey;
-        text-align: center;
-        font-weight: bolder;
-        color: honeydew;
-        border-style: solid;
-      "
+    <div
+      style="text-align: center; border: solid blue; padding-bottom: 0px"
+      class="md"
     >
-      Random <em style="color: rgb(245, 196, 224)">"Quotes"</em> Generator
-      <i style="color: rgb(245, 231, 35)" class="fab fa-accusoft"></i>
-    </h2>
+      <h2
+        style="
+          background-color: grey;
+          text-align: center;
+          font-weight: bolder;
+          color: honeydew;
+          border-style: solid;
+        "
+      >
+        Random <em style="color: rgb(245, 196, 224)">"Quotes"</em> Generator
+        <i style="color: rgb(245, 231, 35)" class="fab fa-accusoft"></i>
+      </h2>
       <img
         id="img"
-        src="https://picsum.photos/1280/500/?random"
-        style=" max-width: 100%;
-        height: auto; "
-        
+        src="https://picsum.photos/1280/200/?random"
+        style="width: 100%; padding-top: 5px"
       />
       <div
-        style="background-color: thistle; border: solid; border-radius: 40px; margin-top: 80px;"
+        style="
+          background-color: thistle;
+          border: solid teal;
+          border-radius: 40px;
+          margin-top: 125px;
+        "
       >
         <h4 style="font-size: x-large" id="h4"></h4>
         <p
