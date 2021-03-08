@@ -15,16 +15,23 @@
   <style>
     body {
       overflow: hidden;
-      padding-bottom:0;
+      margin-bottom: 20px;
+     
     }
+
+
+
+    /* .fillo {
+height: calc(100vh - 200px);
+} */
   </style>
   <title>Random Quotes</title>
 </head>
 
 
 
-<body>
-  <div class="container-fluid  bg-dark fa-border flex-fill">
+<body class="h-100 mh-100">
+  <div class="container-fluid  bg-dark fa-border flex-grow mh-100  ">
     <h2 class="myh2 ">
       <i style="color: rgb(245, 231, 35)" class="fab fa-accusoft"></i> Random <em
         style="color: rgb(166, 250, 69)">"Quotes"</em> Generator
@@ -33,15 +40,16 @@
 
     <div class=".flex-*-grow-1 container-fluid"> <img id="img" src="https://picsum.photos/1280/300/?random"
         class="rounded-circle mx-auto img-fluid m-3" />
-      <div class="m-3 "
-        style="background-color: rgb(235, 213, 235); border: solid; border-radius: 40px ;text-align: center;">
+      <div 
+        style="background-color: rgb(235, 213, 235); border: solid; border-radius: 40px ;text-align: center; margin-top: 50px;margin-bottom: 20px;">
         <h4 style="font-size: x-large  " id="h4" class="m-1"></h4>
         <p class="bg-dark text-warning" style="font-weight: bolder ;font-size: 20px;" id="p">
         </p>
         <button style="
-          padding: 10px;
-          margin-bottom: 20px;
+          padding:10px;
+          margin-bottom: 10px;
           font-weight: bolder;
+          
           color: rgb(255, 211, 211);
           background-color: #56808f;
           font-size: 20px;
